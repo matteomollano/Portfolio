@@ -1,0 +1,40 @@
+/* Footer section - right below contact section */
+#footer {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+
+    border-top: 0.1px solid #bbb;
+    padding-top: 20px;
+}
+
+.footer-content h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #e63946 0%, #f77f00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-content p {
+    color: #8E8E93;
+    font-size: 1rem;
+    letter-spacing: -0.022em;
+}

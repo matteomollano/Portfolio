@@ -1,0 +1,539 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matteo Mollano Portfolio">
+    <title>Matteo Mollano | Data Scientist</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/awards.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!--Font Awesome for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="name">Matteo Mollano</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <section id="home">
+        <div class="home-container">
+            <div class="left">
+                <h2 class="about-header">Get to know me!</h2>
+                <p class="about-desc">I'm a recent Master of Science in Computer Science graduate with a passion for data science and machine learning. I am experienced in building ETL data pipelines, analyzing complex datasets, and turning data into actionable insights for organizations. I'm also an AWS Certified Cloud Practitioner and have experience across data engineering, cloud computing, and cybersecurity. I'm excited to apply my skills and grow in a data-focused role as a data analyst or data scientist!</p>
+                <div class="button-container">
+                    <a class="btn resume-button" href="MatteoMollanoResume.pdf" target="_blank" rel="noopener">View Resume</a>
+                    <a class="btn contact-button" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="right">
+                <img class="headshot-image" src="images/ProfessionalHeadshot.jpg" alt="My professional headshot"/>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+            <!--RAG Project-->
+            <div class="project-tile">
+                <img class="project-image" src="images/RAG.webp" alt="Picture of RAG system" />
+                <div class="project-content">
+                    <h3 class="project-title">RAG Chatbot</h3>
+                    <p class="project-desc">A Retrieval-Augmented Generation (RAG) Chatbot that answers investor questions about U.S. Bancorp using SEC filings and Earnings Call Transcripts. Features include data extraction, web scraping, data preprocessing, vector database storage, and Ollama large language models.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">Python</span>
+                        <span class="project-tool">BeautifulSoup</span>
+                        <span class="project-tool">Pandas</span>
+                        <span class="project-tool">LangChain</span>
+                        <span class="project-tool">Sentence-Transformers</span>
+                        <span class="project-tool">ChromaDB</span>
+                        <span class="project-tool">Ollama Gemma3:4b</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matteomollano/RAG-Chatbot" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Machine Learning Network Analyzer Project-->
+            <div class="project-tile">
+                <img class="project-image" src="images/Netara.png" alt="Picture of Netara's IP geolocation page" />
+                <div class="project-content">
+                    <h3 class="project-title">Netara</h3>
+                    <p class="project-desc">A machine learning network analyzer that monitors real-time WiFi traffic and detects malicious activity in network flows. It features data preprocessing, SQL database storage, DoS detection using KNN, RandomForest, and IsolationForest models, and a React frontend for visualizations and IP geolocation via MapBox.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">Python</span>
+                        <span class="project-tool">Scapy</span>
+                        <span class="project-tool">Pandas</span>
+                        <span class="project-tool">MariaDB</span>
+                        <span class="project-tool">scikit-learn</span>
+                        <span class="project-tool">React</span>
+                        <span class="project-tool">Node.js</span>
+                        <span class="project-tool">MapBox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matteomollano/Capstone" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--ETF Recommender Project-->
+            <div class="project-tile">
+                <img class="project-image" src="images/ETF.jpg" alt="Digital illustration showing ETF concept with connected financial icons and analytics symbols" />
+                <div class="project-content">
+                    <h3 class="project-title">ETF Recommender</h3>
+                    <p class="project-desc">A data science project that recommends Exchange-Traded Funds (ETFs) by analyzing their underlying holdings data. It features web scraping of financial data from multiple sources, data transformation, NoSQL database storage, and cosine similarity analysis for ETF recommendations.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">Python</span>
+                        <span class="project-tool">BeautifulSoup</span>
+                        <span class="project-tool">Pandas</span>
+                        <span class="project-tool">MongoDB</span>
+                        <span class="project-tool">Selenium</span>
+                        <span class="project-tool">Matplotlib</span>
+                        <span class="project-tool">Seaborn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matteomollano/ETF-Recommender" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Web Application Vulnerability Scanner Project-->
+            <div class="project-tile">
+                <img class="project-image" src="images/ScannPal.png" alt="Picture of ScannPal logo" />
+                <div class="project-content">
+                    <h3 class="project-title">ScannPal</h3>
+                    <p class="project-desc">A cloud-based web application vulnerability scanner that automates the process of detecting SQL Injection, Cross-Site Scripting (XSS) and Command Injection vulnerabilities in web applications. It features web page interaction via Java Selenium, a custom web crawling algorithm designed in Java, parallel computing using AWS services, and a web interface to view scan results.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">Java</span>
+                        <span class="project-tool">Selenium</span>
+                        <span class="project-tool">Java AWS SDK</span>
+                        <span class="project-tool">EC2</span>
+                        <span class="project-tool">S3</span>
+                        <span class="project-tool">VPC</span>
+                        <span class="project-tool">RDS MySQL</span>
+                        <span class="project-tool">Node.js</span>
+                        <span class="project-tool">EJS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jcng75/ScannPal" class="project-link" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Automated Email Alerts for a GCP virtual machine-->
+            <div class="project-tile">
+                <img class="project-image" src="images/GoogleCloudAlerts.jpg" alt="Picture of Google Cloud Alert Monitoring" />
+                <div class="project-content">
+                    <h3 class="project-title">Automated Email Alerts</h3>
+                    <p class="project-desc">An automated system developed using Python and Google Cloud services to alert team members of when an expensive cloud virtual machine has been running for more than 2 hours. This project helped the cyber team to reduce unnecessary costs for idle GCP instances. Key features include sending email notifications using Python, implementing serverless Cloud Functions, and scheduling the function to run every 30 minutes using Cloud Scheduler.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">Python</span>
+                        <span class="project-tool">Google Cloud</span>
+                        <span class="project-tool">Cloud Functions</span>
+                        <span class="project-tool">Compute Engine</span>
+                        <span class="project-tool">Google Cloud SDK</span>
+                        <span class="project-tool">Python Email Library</span>
+                        <span class="project-tool">Cloud Scheduler</span>
+                    </div>
+                    <!-- <div class="project-links">
+                        <a href="https://github.com/matteomollano/" class="project-link" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!--Heart Disease Risk Prediction Project-->
+            <div class="project-tile">
+                <img class="project-image" src="images/HeartDiseaseRisk.jpeg" alt="Digital medical illustration of a heart with highlighted disease area on dark background" />
+                <div class="project-content">
+                    <h3 class="project-title">Heart Disease Risk Prediction</h3>
+                    <p class="project-desc">A data science project that identifies key factors contributing to heart disease risk through analysis of real-world patient data collected from five hospitals (over 900 patients). It features statistical hypothesis testing, dimensionality reduction using PCA and Factor Analysis, and machine learning models including Decision Trees, K-Nearest Neighbors, and Linear Regression for predictive analysis.</p>
+                    <div class="project-tools">
+                        <span class="project-tool">R</span>
+                        <span class="project-tool">Python</span>
+                        <span class="project-tool">Pandas</span>
+                        <span class="project-tool">Hypothesis Tests</span>
+                        <span class="project-tool">PCA</span>
+                        <span class="project-tool">Factor Analysis</span>
+                        <span class="project-tool">Machine Learning</span>
+
+                    </div>
+                    <!-- <div class="project-links">
+                        <a href="https://github.com/matteomollano/" class="project-link" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Awards-->
+    <section id="awards">
+        <div class="section-header">
+            <h2>Awards</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="awards-grid">
+            <!--2025 ISC2 Cybersecurity CTF-->
+            <div class="award-tile">
+                <div class="award-metadata">
+                    <img class="award-logo" src="images/ISC2.png" alt="ISC2 Logo">
+                    <div class="award-heading">
+                        <h2 class="award-title">2025 ISC2 Capture the Flag Champion</h2>
+                        <p class="award-company">Hosted by ISC2 Long Island Chapter</p>
+                    </div>
+                </div>
+                <div class="award-content">
+                    <div class="award-desc">
+                        Placed 1st in the 2025 Long Island ISC2 Cybersecurity Competition, competing against 60 students from over 26
+                        universities. Solved challenge problems involving advanced cryptography, packet analysis, base64/hex decoding, password hashing, and various cipher algorithms. Utilized tools such as Hashcat and John the Ripper for password cracking, OpenSSL for RSA decryption, Wireshark for network analysis, and Nmap for network enumeration under timed conditions.
+                    </div>
+                    <div class="award-links">
+                        <a href="https://www.linkedin.com/posts/isc2chapternycli_on-march-28-2025-we-held-our-fourth-annual-activity-7312594569328558080-girw/" class="award-link" target="_blank" rel="noopener">
+                            ISC2 LinkedIn Post about the competition     
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--2024 ISC2 Cybersecurity CTF-->
+            <div class="award-tile">
+                <div class="award-metadata">
+                    <img class="award-logo" src="images/ISC2.png" alt="ISC2 Logo">
+                    <div class="award-heading">
+                        <h2 class="award-title">2024 ISC2 Capture the Flag Champion</h2>
+                        <p class="award-company">Hosted by ISC2 Long Island Chapter</p>
+                    </div>
+                </div>
+                <div class="award-content">
+                    <div class="award-desc">
+                        Placed 1st in the 2024 Long Island ISC2 Cybersecurity Competition, competing against 20 teams from over 7 universities.
+                        Solved challenge problems involving base64 and Morse code decoding, Linux file permissions, disassembly of binary executables, caesar cipher decryption, packet analysis, and RSA decryption. Utilized Hashcat for password cracking, OpenSSL
+                        for RSA operations, GDB for binary analysis, and Wireshark for packet analysis under timed conditions.
+                    </div>
+                    <div class="award-links">
+                        <a href="https://news.hofstra.edu/2024/04/11/hofstra-university-students-win-big-at-2024-long-island-capture-the-flag-competition/"
+                            class="award-link" target="_blank" rel="noopener">
+                            Hofstra News post about our win
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Hofstra-Amazon CTF Event-->
+            <div class="award-tile">
+                <div class="award-metadata">
+                    <img class="award-logo" src="images/Amazon.jpg" alt="Amazon Logo">
+                    <div class="award-heading">
+                        <h2 class="award-title">Hofstra-Amazon Capture the Flag - 4th Place</h2>
+                        <p class="award-company">Hosted by Amazon and Hofstra University</p>
+                    </div>
+                </div>
+                <div class="award-content">
+                    <div class="award-desc">
+                        Finished 4th place in the finals after a first round of 79 teams (14 teams advanced to the finals), competing against
+                        14 finalist teams from 5 universities. Solved challenge problems involving packet capture analysis, Caesar/ROT13/substitution cipher decoding, binary reverse-engineering, steganography, and SQL injection. Utilized tools such as Wireshark for network forensics, Ghidra for binary analysis, Nmap for enumeration and service detection, and sqlmap for remediating SQL injection vulnerabilities.
+                    </div>
+                    <div class="award-links">
+                        <a href="https://news.hofstra.edu/2023/11/01/student-hackers-compete-for-16k-in-prize-money/"
+                            class="award-link" target="_blank" rel="noopener">
+                            Hofstra News post about the competition
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Hofstra Senior Project Showcase Competition-->
+            <div class="award-tile">
+                <div class="award-metadata">
+                    <img class="award-logo" src="images/Hofstra.svg" alt="Hofstra Logo">
+                    <div class="award-heading">
+                        <h2 class="award-title">Senior Project Showcase Competition - 3rd Place</h2>
+                        <p class="award-company">Hosted by Hofstra University</p>
+                    </div>
+                </div>
+                <div class="award-content">
+                    <div class="award-desc">
+                        Awarded 3rd place at the Senior Design Poster Showcase for our team's project ScannPal, a cloud-based web application
+                        vulnerability scanner. We demonstrated how ScannPal crawls websites, performs SQL and XSS injection tests, and securely
+                        stores results in AWS RDS for later analysis. Utilizing parallel computing across 15 EC2 instances, our solution
+                        showcases how businesses can proactively identify and address security vulnerabilities in their web applications.
+                    </div>
+                    <div class="award-links">
+                        <a href="https://news.hofstra.edu/2024/05/11/from-biotech-to-computer-tech-on-display-at-dematteis-senior-project-showcase-competition/"
+                            class="award-link" target="_blank" rel="noopener">
+                            Hofstra News post about the competition
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <!--Programming Languages Section-->
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <!-- <i class="fab fa-python"></i> -->
+                             <img src="images/icons/Python.svg" alt="Python logo" />
+                        </div>
+                        <p>Python</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <!-- <i class="fa-solid fa-database"></i> -->
+                            <img src="images/icons/SQL.png" alt="SQL logo" />
+                        </div>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <!-- <i class="fa-brands fa-r-project"></i> -->
+                            <img src="images/icons/R.svg" alt="R programming language logo" />
+                        </div>
+                        <p>R</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <!-- <i class="fa-brands fa-java"></i> -->
+                            <img src="images/icons/Java.svg" alt="Java logo" />
+                        </div>
+                        <p>Java</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <!-- <i class="fa-brands fa-js"></i> -->
+                            <img src="images/icons/JavaScript.svg" alt="JavaScript logo" />
+                        </div>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Data Engineering Section-->
+            <div class="skills-category">
+                <h3>Data Engineering</h3>
+                <div class="skills-grid">
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Pandas.svg" alt="Pandas library logo" />
+                        </div>
+                        <p>Pandas</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/scikit-learn.svg" alt="scikit-learn library logo" />
+                        </div>
+                        <p>scikit-learn</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/NumPy.svg" alt="NumPy library logo" />
+                        </div>
+                        <p>NumPy</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/BeautifulSoup.png" alt="BeautifulSoup library logo" />
+                        </div>
+                        <p>BeautifulSoup</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Selenium.png" alt="Selenium library logo" />
+                        </div>
+                        <p>Selenium</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Matplotlib.svg" alt="Matplotlib library logo" />
+                        </div>
+                        <p>Matplotlib</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Seaborn.png" alt="Seaborn library logo" />
+                        </div>
+                        <p>Seaborn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cloud & Dev Tools Section-->
+            <div class="skills-category">
+                <h3>Cloud & Dev Tools</h3>
+                <div class="skills-grid">
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/AWS.svg" alt="AWS logo" />
+                        </div>
+                        <p>AWS</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/GoogleCloud.svg" alt="Google Cloud logo" />
+                        </div>
+                        <p>GCP</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Linux.svg" alt="Linux logo" />
+                        </div>
+                        <p>Linux</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/React.svg" alt="React logo" />
+                        </div>
+                        <p>React</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Node.js.svg" alt="Node.js logo" />
+                        </div>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Flask.svg" alt="Flask logo" />
+                        </div>
+                        <p>Flask</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-icon">
+                            <img src="images/icons/Git.svg" alt="Git logo" />
+                        </div>
+                        <p>Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Contact Info</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h3>Get in touch!</h3>
+                <p>Feel free to reach out to me for any questions or opportunities!</p>
+            </div>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>matteomollano@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a class="contact-link" href="https://github.com/matteomollano" target="_blank" rel="noopener">
+                            github.com/matteomollano
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a class="contact-link" href="https://www.linkedin.com/in/matteomollano" target="_blank" rel="nooepner">
+                            linkedin.com/matteomollano
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h2>Matteo Mollano</h2>
+                <p>Thanks for visiting my portfolio website!</p>
+                <p>© 2025 Matteo Mollano. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="script.js"></script>
+</body>
+</html>

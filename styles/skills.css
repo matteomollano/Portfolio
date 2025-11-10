@@ -1,0 +1,78 @@
+/* Skills section - right below projects section */
+#skills {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-category h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    gap: 1rem;
+}
+
+.skills-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    /* border: 1px solid rgba(60, 60, 67, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); */
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 0.75rem;
+}
+
+/* Only apply background and icon colors when containing an i tag */
+.skills-icon:has(i) {
+    color: #007AFF;
+    background: rgba(0, 122, 255, 0.1);
+}
+
+.skills-icon img {
+    height: 56px;
+    width: 56px;
+}
+
+.skill-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    margin-bottom: 1rem;
+}
