@@ -23,17 +23,17 @@
     padding-top: 20px;
 }
 
-.footer-content h2 {
-    font-size: 1.375rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+.footer-content #footer-message {
+    font-size: 1rem;
+    letter-spacing: -0.022em;
+
     background: linear-gradient(135deg, #e63946 0%, #f77f00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.footer-content p {
+.footer-content #footer-copyright {
     color: #8E8E93;
     font-size: 1rem;
     letter-spacing: -0.022em;
